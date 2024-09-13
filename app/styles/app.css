@@ -1,1 +1,8 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+:focus,
+.view label:focus,
+.todo-list li .toggle:focus + label,
+.toggle-all:focus + label {
+  /* !important needed because todomvc styles deliberately disable the outline */
+  outline: #d86f95 solid !important;
+}
