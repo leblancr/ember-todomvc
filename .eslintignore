@@ -12,3 +12,6 @@
 
 # ember-try
 /.node_modules.ember-try/
+
+node_modules/
+dist/

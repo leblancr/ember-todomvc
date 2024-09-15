@@ -22,7 +22,7 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: {},
+  rules: { 'prettier/prettier': 'error' },
   overrides: [
     // node files
     {
@@ -45,7 +45,12 @@ module.exports = {
         browser: false,
         node: true,
       },
-      extends: ['plugin:n/recommended'],
+      extends: [
+        'plugin:n/recommended',
+        'eslint:recommended',
+        'plugin:ember/recommended',
+        'plugin:prettier/recommended',
+      ],
     },
     {
       // test files
