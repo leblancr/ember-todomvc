@@ -83,7 +83,7 @@
     "edition": "octane"
   },
   "lint-staged": {
-    "app/components/**/*.js": "eslint --cache --fix",
-    "app/templates/**/*.hbs": "ember-template-lint"
+    "app/components/*.js": "eslint --cache --fix",
+    "app/templates/*.hbs": "ember-template-lint"
   }
 }
